@@ -15,11 +15,11 @@ C:/Users/User/Desktop/Morpho
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-58702
+64870
 Successfully changed project path to: C:/Users/User/Desktop/Morpho
 C:/Users/User/Desktop/Morpho
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 55.24 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 107.10 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.7f1 (dd97f2c94397)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.5f1/Editor/Data/Resources/UnitySubsystems
@@ -36,65 +36,309 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.5f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.5f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.5f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56848
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56764
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.5f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.002658 seconds.
+Registered in 0.003240 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 82.50 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 102.20 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.626 seconds
+- Completed reload, in  2.455 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.001736 seconds.
+Registered in 0.002674 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 107.03 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 98.59 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  2.011 seconds
+- Completed reload, in  2.268 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.11 seconds
-Refreshing native plugins compatible for Editor in 0.80 ms, found 0 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.08 seconds
+Refreshing native plugins compatible for Editor in 0.79 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 2421 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 114.2 MB.
-System memory in use after: 114.4 MB.
+System memory in use before: 114.3 MB.
+System memory in use after: 114.5 MB.
 
 Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 2864.
-Total: 4.684600 ms (FindLiveObjects: 0.399600 ms CreateObjectMapping: 0.219000 ms MarkObjects: 3.915400 ms  DeleteObjects: 0.147700 ms)
+Total: 4.228400 ms (FindLiveObjects: 0.365000 ms CreateObjectMapping: 0.205300 ms MarkObjects: 3.542700 ms  DeleteObjects: 0.114000 ms)
 
 ========================================================================
 Received Import Request.
-  path: Assets/Restos/Readme.asset
-  artifactKey: Guid(83c2ed844a8c74b779a4c823d16594b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Restos/Readme.asset using Guid(83c2ed844a8c74b779a4c823d16594b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '02eaf4cb490e7e9117ed3a19557a81d2') in 0.066928 seconds
-  Import took 0.075162 seconds .
+  path: Assets/Scenes/MORPHO.unity
+  artifactKey: Guid(d1c3109bdb54ad54c8a2b2838528e640) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MORPHO.unity using Guid(d1c3109bdb54ad54c8a2b2838528e640) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ab2aa44f801a259a92e665176dbbf578') in 0.037783 seconds
+  Import took 0.046866 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.002254 seconds.
+Registered in 0.002656 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.08 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 0.60 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  2.327 seconds
+- Completed reload, in  2.142 seconds
 Platform modules already initialized, skipping
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 1.10 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 0.78 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 2312 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 107.3 MB.
-System memory in use after: 107.5 MB.
+System memory in use before: 107.4 MB.
+System memory in use after: 107.6 MB.
 
 Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 2867.
-Total: 18.689400 ms (FindLiveObjects: 1.169700 ms CreateObjectMapping: 0.322600 ms MarkObjects: 17.143200 ms  DeleteObjects: 0.050700 ms)
+Total: 4.352800 ms (FindLiveObjects: 0.352200 ms CreateObjectMapping: 0.166900 ms MarkObjects: 3.807700 ms  DeleteObjects: 0.024300 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002708 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.79 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.234 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 1.15 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2312 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 107.4 MB.
+System memory in use after: 107.6 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 2870.
+Total: 7.550200 ms (FindLiveObjects: 0.601300 ms CreateObjectMapping: 0.278800 ms MarkObjects: 6.629300 ms  DeleteObjects: 0.037500 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002796 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.73 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.970 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 1.18 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2313 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 107.5 MB.
+System memory in use after: 107.7 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 2874.
+Total: 5.545800 ms (FindLiveObjects: 0.709300 ms CreateObjectMapping: 0.331000 ms MarkObjects: 4.456700 ms  DeleteObjects: 0.046100 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 225.554352 seconds.
+  path: Assets/Free Pixel Art Hills
+  artifactKey: Guid(eba76040dadd333459b02d640f40be86) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Free Pixel Art Hills using Guid(eba76040dadd333459b02d640f40be86) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '49890a1ea8223e53cb148cafb7566793') in 0.018035 seconds
+  Import took 0.025793 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.412191 seconds.
+  path: Assets/Free Pixel Art Hills/Demo
+  artifactKey: Guid(3b182a07c99bba94db8e5b8a017967ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Free Pixel Art Hills/Demo using Guid(3b182a07c99bba94db8e5b8a017967ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '13efa9da62f51e3f73153ada3b0eb25c') in 0.012329 seconds
+  Import took 0.020192 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.074891 seconds.
+  path: Assets/Free Pixel Art Hills/Demo/Background Example 2.unity
+  artifactKey: Guid(c03ec417bacb48840a2a07a72be16eda) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Free Pixel Art Hills/Demo/Background Example 2.unity using Guid(c03ec417bacb48840a2a07a72be16eda) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2b4a195080c78da2ba526fb993ec9266') in 0.027405 seconds
+  Import took 0.035118 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 12.625085 seconds.
+  path: Assets/Free Pixel Art Hills/PNG
+  artifactKey: Guid(203ceabfeddeb7d48b3c2ea7add8c72e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Free Pixel Art Hills/PNG using Guid(203ceabfeddeb7d48b3c2ea7add8c72e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fb998440dff759826769a15843acec2c') in 0.012758 seconds
+  Import took 0.020647 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.091174 seconds.
+  path: Assets/Free Pixel Art Hills/PNG/Hills Layer 01.png
+  artifactKey: Guid(b8657fe1ee4ab734c910b161488d1cfd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Free Pixel Art Hills/PNG/Hills Layer 01.png using Guid(b8657fe1ee4ab734c910b161488d1cfd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5c7ea78f3efd61e607ec31741e8ce8ec') in 0.292079 seconds
+  Import took 0.301763 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000445 seconds.
+  path: Assets/Free Pixel Art Hills/PNG/Hills Layer 02.png
+  artifactKey: Guid(3f4b3d177ea855b4a833411dbe376d50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Free Pixel Art Hills/PNG/Hills Layer 02.png using Guid(3f4b3d177ea855b4a833411dbe376d50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6fa397eb5dc7286899ccc0639ee3c09f') in 0.026696 seconds
+  Import took 0.036331 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000440 seconds.
+  path: Assets/Free Pixel Art Hills/PNG/Hills Layer 03.png
+  artifactKey: Guid(6db0991689d232641939ba1ec79be9d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Free Pixel Art Hills/PNG/Hills Layer 03.png using Guid(6db0991689d232641939ba1ec79be9d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9f9ce24a51b64f850b6bc7e2b8682147') in 0.025228 seconds
+  Import took 0.034695 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000669 seconds.
+  path: Assets/Free Pixel Art Hills/PNG/Hills Layer 04.png
+  artifactKey: Guid(e8a5841827c9a5f4ebd5bce5b5fd76ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Free Pixel Art Hills/PNG/Hills Layer 04.png using Guid(e8a5841827c9a5f4ebd5bce5b5fd76ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd1bba74602c095f32b53f0f265f2b531') in 0.023099 seconds
+  Import took 0.032409 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000433 seconds.
+  path: Assets/Free Pixel Art Hills/PNG/Hills Layer 01B.png
+  artifactKey: Guid(6d066f9faa20fad44aed43b22ad9c89e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Free Pixel Art Hills/PNG/Hills Layer 01B.png using Guid(6d066f9faa20fad44aed43b22ad9c89e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a0ed8fe14f4f2a2db8acb231fea4c29d') in 0.027581 seconds
+  Import took 0.036874 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000367 seconds.
+  path: Assets/Free Pixel Art Hills/PNG/Hills Layer 06.png
+  artifactKey: Guid(a9e4acbc9cf06e346a34fcda40a0fad1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Free Pixel Art Hills/PNG/Hills Layer 06.png using Guid(a9e4acbc9cf06e346a34fcda40a0fad1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c305f890dbd1946f4f0532cc6db3a9b3') in 0.024614 seconds
+  Import took 0.034215 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000373 seconds.
+  path: Assets/Free Pixel Art Hills/PNG/Hills Layer 05.png
+  artifactKey: Guid(2dc47d91b92f87c4fb49c83c697b1a38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Free Pixel Art Hills/PNG/Hills Layer 05.png using Guid(2dc47d91b92f87c4fb49c83c697b1a38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6d9fd1ed68fce23c6bcad261e48ba16e') in 0.076170 seconds
+  Import took 0.083891 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.784171 seconds.
+  path: Assets/Free Pixel Art Hills/PREVIEWS
+  artifactKey: Guid(cbc17f0448b52d540932af26f27c696d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Free Pixel Art Hills/PREVIEWS using Guid(cbc17f0448b52d540932af26f27c696d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '347440787841a44aaeb68431c3959907') in 0.011986 seconds
+  Import took 0.019047 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.366534 seconds.
+  path: Assets/Free Pixel Art Hills/PREVIEWS/Hills Free (update 3.0).png
+  artifactKey: Guid(76a90e58ae50195448ac8d62a8b82bb7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Free Pixel Art Hills/PREVIEWS/Hills Free (update 3.0).png using Guid(76a90e58ae50195448ac8d62a8b82bb7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '307724fc463460393812d123a01b27f5') in 0.083917 seconds
+  Import took 0.097100 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.947791 seconds.
+  path: Assets/Free Pixel Art Hills/You may also like
+  artifactKey: Guid(fe752c02cb1e17c4da59e2e3b83e7c11) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Free Pixel Art Hills/You may also like using Guid(fe752c02cb1e17c4da59e2e3b83e7c11) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c9455db05cd4ec5b253bcdd5a544173d') in 0.010918 seconds
+  Import took 0.017480 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.993092 seconds.
+  path: Assets/Free Pixel Art Hills/You may also like/Pixel Art Forest.png
+  artifactKey: Guid(6e4fcb38a13a6a849b1a48109c631299) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Free Pixel Art Hills/You may also like/Pixel Art Forest.png using Guid(6e4fcb38a13a6a849b1a48109c631299) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e00e70aaf43e4eff4f5af027799c0b36') in 0.069064 seconds
+  Import took 0.078060 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000274 seconds.
+  path: Assets/Free Pixel Art Hills/You may also like/Pixel Art Snowy Forest.png
+  artifactKey: Guid(5a4c8d3218ab79b409d9aef43f4992b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Free Pixel Art Hills/You may also like/Pixel Art Snowy Forest.png using Guid(5a4c8d3218ab79b409d9aef43f4992b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c3d96db1fdde0893a627a27a803fa34e') in 0.046809 seconds
+  Import took 0.055848 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000436 seconds.
+  path: Assets/Free Pixel Art Hills/You may also like/Pixel Art Runner.png
+  artifactKey: Guid(60f27b59e06ff344888f5c02c14a7ab5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Free Pixel Art Hills/You may also like/Pixel Art Runner.png using Guid(60f27b59e06ff344888f5c02c14a7ab5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eb591d30e34fbc42720993e245c8ffa0') in 0.045596 seconds
+  Import took 0.052666 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000377 seconds.
+  path: Assets/Free Pixel Art Hills/You may also like/Pixel Art Plataformer Painted Style.png
+  artifactKey: Guid(e81c32e79859d9444bfeec5c6276e3cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Free Pixel Art Hills/You may also like/Pixel Art Plataformer Painted Style.png using Guid(e81c32e79859d9444bfeec5c6276e3cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bdd586a791ca5fb4624e53e2cff3281c') in 0.038987 seconds
+  Import took 0.046271 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 58.556029 seconds.
+  path: Assets/Day Forest Background
+  artifactKey: Guid(eba76040dadd333459b02d640f40be86) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Day Forest Background using Guid(eba76040dadd333459b02d640f40be86) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ca16dca9b3ab8d08fa54e6905d3a8468') in 0.012153 seconds
+  Import took 0.019494 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002088 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.02 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.267 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.96 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2313 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 110.4 MB.
+System memory in use after: 110.7 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 2889.
+Total: 5.341900 ms (FindLiveObjects: 0.542900 ms CreateObjectMapping: 0.297400 ms MarkObjects: 4.472500 ms  DeleteObjects: 0.025800 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 218.599470 seconds.
+  path: Assets/Day Forest Background/Demo/MoveBackground.cs
+  artifactKey: Guid(6e9e32b7281e96947899f72129830dbf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Day Forest Background/Demo/MoveBackground.cs using Guid(6e9e32b7281e96947899f72129830dbf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8e29e8e8f6ae014ee4be1695010efa8c') in 0.082819 seconds
+  Import took 0.091070 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002563 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.74 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.241 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.69 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2313 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 110.4 MB.
+System memory in use after: 110.6 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 2892.
+Total: 3.702100 ms (FindLiveObjects: 0.391200 ms CreateObjectMapping: 0.213500 ms MarkObjects: 3.066500 ms  DeleteObjects: 0.028100 ms)
 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file
