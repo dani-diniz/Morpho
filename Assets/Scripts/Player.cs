@@ -10,6 +10,10 @@ public class Player : MonoBehaviour {
 		public float turnSpeed = 400.0f;
 		private Vector3 moveDirection = Vector3.zero;
 		public float gravity = 20.0f;
+		public GameObject startPoint;
+
+	/*Limite -Y*/
+	public float donwLimit = -10f;
 
 		void Start () {
 			controller = GetComponent <CharacterController>();
@@ -17,6 +21,7 @@ public class Player : MonoBehaviour {
 		}
 
 		void Update (){
+
 			if (Input.GetKey ("w")) {
 				anim.SetInteger ("AnimationPar", 1);
 			}  else {
@@ -27,9 +32,37 @@ public class Player : MonoBehaviour {
 				moveDirection = transform.forward * Input.GetAxis("Vertical") * speed;
 			}
 
+
+		if (transform.position.y <= donwLimit)
+		{
+			controller.enabled = false;
+			transform.position = startPoint.transform.position;
+			controller.enabled = true;
+		}
+
 			float turn = Input.GetAxis("Horizontal");
 			transform.Rotate(0, turn * turnSpeed * Time.deltaTime, 0);
 			controller.Move(moveDirection * Time.deltaTime);
 			moveDirection.y -= gravity * Time.deltaTime;
 		}
+
+
+    private void OnTriggerEnter(Collider collision)
+    {
+		//LAMA
+		if (collision.CompareTag("Lama"))
+		{
+			Debug.Log("LAMA");
+			speed = 1f;
+		}
+	}
+
+    private void OnTriggerExit(Collider collision)
+    {
+		//LAMA
+		if (collision.CompareTag("Lama"))
+		{
+			speed = 5f;
+		}
+	}
 }
