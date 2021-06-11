@@ -1643,6 +1643,18 @@ PrefabInstance:
       propertyPath: startPoint
       value: 
       objectReference: {fileID: 1586675739}
+    - target: {fileID: 137579269714215424, guid: 2abf19653d633114faedf3b60dc6c39f, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: aea55695b25ee1740b137763ff078bce, type: 2}
+    - target: {fileID: 137579269714215424, guid: 2abf19653d633114faedf3b60dc6c39f, type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: a394e24f678bc754895eae09df54d310, type: 2}
+    - target: {fileID: 137579269714215424, guid: 2abf19653d633114faedf3b60dc6c39f, type: 3}
+      propertyPath: m_Materials.Array.data[2]
+      value: 
+      objectReference: {fileID: 2100000, guid: 733f753f1a69551488f2118c29e60b69, type: 2}
     - target: {fileID: 143350241100547368, guid: 2abf19653d633114faedf3b60dc6c39f, type: 3}
       propertyPath: m_Center.y
       value: 0.11
