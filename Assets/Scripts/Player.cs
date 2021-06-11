@@ -52,7 +52,6 @@ public class Player : MonoBehaviour {
 		//LAMA
 		if (collision.CompareTag("Lama"))
 		{
-			Debug.Log("LAMA");
 			speed = 1f;
 		}
 	}
