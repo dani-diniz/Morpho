@@ -3,35 +3,47 @@ using System.Collections;
 
 public class Player : MonoBehaviour {
 
-		private Animator anim;
-		private CharacterController controller;
+	private Animator anim;
+	private CharacterController controller;
 
-		public float speed = 600.0f;
-		public float turnSpeed = 400.0f;
-		private Vector3 moveDirection = Vector3.zero;
-		public float gravity = 20.0f;
-		public GameObject startPoint;
+	public float speed = 600.0f;
+	public float turnSpeed = 400.0f;
+	private Vector3 moveDirection = Vector3.zero;
+	public float gravity = 20.0f;
+	public GameObject startPoint;
+
+	private bool onFloor = true;
 
 	/*Limite -Y*/
 	public float donwLimit = -10f;
 
-		void Start () {
-			controller = GetComponent <CharacterController>();
-			anim = gameObject.GetComponentInChildren<Animator>();
+	void Start () {
+		controller = GetComponent <CharacterController>();
+		anim = gameObject.GetComponentInChildren<Animator>();
+	}
+
+	void Update ()
+	{
+
+		if (Input.GetKey ("w")) {
+			anim.SetInteger ("AnimationPar", 1);
+		}  else {
+			anim.SetInteger ("AnimationPar", 0);
 		}
 
-		void Update (){
+		if(controller.isGrounded){
+			moveDirection = transform.forward * Input.GetAxis("Vertical") * speed;
+			onFloor = true;
+		}
 
-			if (Input.GetKey ("w")) {
-				anim.SetInteger ("AnimationPar", 1);
-			}  else {
-				anim.SetInteger ("AnimationPar", 0);
-			}
+        if (Input.GetKeyDown("space") && (onFloor == true))
+        {
+			onFloor = false;
+			moveDirection.x = 7;
+			moveDirection.y = 18;
 
-			if(controller.isGrounded){
-				moveDirection = transform.forward * Input.GetAxis("Vertical") * speed;
-			}
-
+		}
+		
 
 		if (transform.position.y <= donwLimit)
 		{
@@ -44,7 +56,7 @@ public class Player : MonoBehaviour {
 			transform.Rotate(0, turn * turnSpeed * Time.deltaTime, 0);
 			controller.Move(moveDirection * Time.deltaTime);
 			moveDirection.y -= gravity * Time.deltaTime;
-		}
+	}
 
 
     private void OnTriggerEnter(Collider collision)
