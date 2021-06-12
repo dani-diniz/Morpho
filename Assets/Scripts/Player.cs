@@ -16,6 +16,7 @@ public class Player : MonoBehaviour {
 	public float randomWind = 15f;
 	public float windTime = 5f;
 	private float windTimeInitial = 5f;
+	private int randomFactor = 0;
 	/*Wind*/
 
 	/*Lama & Gelo*/
@@ -71,13 +72,25 @@ public class Player : MonoBehaviour {
         {
 			windTime -= Time.deltaTime;
 
-			speed = 2f;
 
-            if (windTime <= 0)
+
+			if (randomFactor <= 4)
+			{
+				speed = 2f;
+			}
+            else
             {
+				speed = 5;
+            }
+
+			if (windTime <= 0)
+            {
+				Debug.Log("Vento");
 				windTime = windTimeInitial;
 				randomWind = Random.Range(3, 20);
-            }
+				randomFactor = Random.Range(0, 11);
+				Debug.Log(randomFactor);
+			}
         }
         else
         {
@@ -100,14 +113,14 @@ public class Player : MonoBehaviour {
     private void OnTriggerEnter(Collider collision)
     {
 		//LAMA
-		if (collision.CompareTag("Lama"))
+		if (collision.CompareTag("Mud"))
 		{
 			onLama = true;
 			speed = 1f;
 		}
 
 		//LAMA
-		if (collision.CompareTag("Gelo"))
+		if (collision.CompareTag("Ice"))
 		{
 			onGelo = true;
 			speed = 10f;
@@ -117,14 +130,14 @@ public class Player : MonoBehaviour {
     private void OnTriggerExit(Collider collision)
     {
 		//LAMA
-		if (collision.CompareTag("Lama"))
+		if (collision.CompareTag("Mud"))
 		{
 			onLama = false;
 			speed = 5f;
 		}
 
 		//LAMA
-		if (collision.CompareTag("Gelo"))
+		if (collision.CompareTag("Ice"))
 		{
 			onLama = false;
 			speed = 5f;

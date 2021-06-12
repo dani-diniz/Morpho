@@ -732,7 +732,7 @@ GameObject:
   - component: {fileID: 482935059}
   m_Layer: 0
   m_Name: Lama02
-  m_TagString: Lama
+  m_TagString: Mud
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2077,7 +2077,7 @@ GameObject:
   - component: {fileID: 1726369041}
   m_Layer: 0
   m_Name: Gelo01
-  m_TagString: Gelo
+  m_TagString: Ice
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2400,7 +2400,7 @@ GameObject:
   - component: {fileID: 1975076530}
   m_Layer: 0
   m_Name: Lama01
-  m_TagString: Lama
+  m_TagString: Mud
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
