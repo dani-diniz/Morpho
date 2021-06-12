@@ -12,6 +12,17 @@ public class Player : MonoBehaviour {
 	public float gravity = 20.0f;
 	public GameObject startPoint;
 
+	/*Wind*/
+	public float randomWind = 15f;
+	public float windTime = 5f;
+	private float windTimeInitial = 5f;
+	/*Wind*/
+
+	/*Lama & Gelo*/
+	private bool onGelo = false;
+	private bool onLama = false;
+	/*Lama & Gelo*/
+
 	private bool onFloor = true;
 
 	/*Limite -Y*/
@@ -52,10 +63,37 @@ public class Player : MonoBehaviour {
 			controller.enabled = true;
 		}
 
-			float turn = Input.GetAxis("Horizontal");
-			transform.Rotate(0, turn * turnSpeed * Time.deltaTime, 0);
-			controller.Move(moveDirection * Time.deltaTime);
-			moveDirection.y -= gravity * Time.deltaTime;
+		/*WIND*/
+
+		randomWind -= Time.deltaTime;
+
+        if (randomWind <= 0)
+        {
+			windTime -= Time.deltaTime;
+
+			speed = 2f;
+
+            if (windTime <= 0)
+            {
+				windTime = windTimeInitial;
+				randomWind = Random.Range(3, 20);
+            }
+        }
+        else
+        {
+			if (onGelo == false && onLama == false)
+            {
+				speed = 5f;
+            }
+        }
+
+		/*WIND*/
+		
+		
+		float turn = Input.GetAxis("Horizontal");
+		transform.Rotate(0, turn * turnSpeed * Time.deltaTime, 0);
+		controller.Move(moveDirection * Time.deltaTime);
+		moveDirection.y -= gravity * Time.deltaTime;
 	}
 
 
@@ -64,7 +102,15 @@ public class Player : MonoBehaviour {
 		//LAMA
 		if (collision.CompareTag("Lama"))
 		{
+			onLama = true;
 			speed = 1f;
+		}
+
+		//LAMA
+		if (collision.CompareTag("Gelo"))
+		{
+			onGelo = true;
+			speed = 10f;
 		}
 	}
 
@@ -73,6 +119,14 @@ public class Player : MonoBehaviour {
 		//LAMA
 		if (collision.CompareTag("Lama"))
 		{
+			onLama = false;
+			speed = 5f;
+		}
+
+		//LAMA
+		if (collision.CompareTag("Gelo"))
+		{
+			onLama = false;
 			speed = 5f;
 		}
 	}
