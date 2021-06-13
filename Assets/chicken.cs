@@ -5,6 +5,9 @@ using UnityEngine.AI;
 
 public class chicken : MonoBehaviour
 {
+
+    // Daniela : The chicken follows a GameObject, the player, which will be associated to the astronaut in Unity
+
     public GameObject player;
     private NavMeshAgent agent;
 
@@ -16,7 +19,10 @@ public class chicken : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+        // Daniela : the movement is determined by transformation on the player's position
+
         transform.LookAt(player.transform.position);
-        agent.SetDestination(player.transform.position);            
+        agent.SetDestination(player.transform.position);
     }
 }
