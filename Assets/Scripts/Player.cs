@@ -19,14 +19,14 @@ public class Player : MonoBehaviour {
 	private int randomFactor = 0;
 	/*Wind*/
 
-	/*Lama & Gelo*/
-	private bool onGelo = false;
-	private bool onLama = false;
-	/*Lama & Gelo*/
+	/*Mud & Ice*/
+	private bool onIce = false;
+	private bool onMud = false;
+	/*Mud & Ice*/
 
 	private bool onFloor = true;
 
-	/*Limite -Y*/
+	/*Limit -Y*/
 	public float donwLimit = -10f;
 
 	void Start () {
@@ -94,7 +94,7 @@ public class Player : MonoBehaviour {
         }
         else
         {
-			if (onGelo == false && onLama == false)
+			if (onIce == false && onMud == false)
             {
 				speed = 5f;
             }
@@ -112,31 +112,31 @@ public class Player : MonoBehaviour {
 
     private void OnTriggerEnter(Collider collision)
     {
-		//LAMA
+		//Mud
 		if (collision.CompareTag("Mud"))
 		{
-			onLama = true;
+			onMud = true;
 			speed = 1f;
 		}
 
-		//LAMA
+		//Ice
 		if (collision.CompareTag("Ice"))
 		{
-			onGelo = true;
+			onIce = true;
 			speed = 10f;
 		}
 	}
 
     private void OnTriggerExit(Collider collision)
     {
-		//LAMA
+		//Mud
 		if (collision.CompareTag("Mud"))
 		{
 			onLama = false;
 			speed = 5f;
 		}
 
-		//LAMA
+		//Ice
 		if (collision.CompareTag("Ice"))
 		{
 			onLama = false;
