@@ -4,18 +4,25 @@ using UnityEngine;
 
 public class ObjectsToCollect : MonoBehaviour
 {
-    public static int objects = 0;
-    // Use this for initialization
-    void Awake()
+    private GameObject player;
+    private Controller_ controller;
+
+    void Start()
     {
-        objects++;
+        player = GameObject.FindGameObjectWithTag("Player");
+        controller = player.GetComponent<Controller_>();
+
     }
 
-    // Update is called once per frame
-    void OnTriggerEnter(Collider Player)
+    private void OnTriggerEnter(Collider other)
     {
-        if (Player.gameObject.tag == "Player")
-            objects--;
-        gameObject.SetActive(false);
+        if (other.gameObject.CompareTag("Player")) 
+        {
+            //Increase the int value of points
+            controller.points++;
+            //Destroy the game object
+            Destroy(gameObject);
+        }
     }
+
 }

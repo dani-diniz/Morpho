@@ -13,10 +13,10 @@ public class Player : MonoBehaviour
 
 	// Joana: constants that determine the physics and velocity of the body (player), they also determine where the game starts
 
-	public float speed = 600.0f;
+	public float speed = 50.0f;
 	public float turnSpeed = 400.0f;
 	private Vector3 moveDirection = Vector3.zero;
-	public float gravity = 20.0f;
+	public float gravity = 9.81f;
 	public GameObject startPoint;
 
 	/*Player Movement*/
@@ -120,11 +120,8 @@ public class Player : MonoBehaviour
 		/*WIND*/
 
 		randomWind -= Time.deltaTime;
-
-		if (randomWind <= 0)
-
 		// Camila : all of the following functions are determined by velocity of the wind being under or equal to 0
-
+		if (randomWind <= 0)
 		{
 			// Camila : wind time should make the player's speed slower
 
