@@ -109,6 +109,7 @@ public class Player : MonoBehaviour
 
 		}
 
+		// Daniela: when the player touches the position of the downLimit, it returns to the startPoint
 
 		if (transform.position.y <= donwLimit)
 		{
