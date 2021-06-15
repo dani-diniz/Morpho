@@ -6,6 +6,10 @@ TagManager:
   tags:
   - Mud
   - Ice
+  - Sticky
+  - Falling
+  - Bouncy
+  - OneWay
   layers:
   - Default
   - TransparentFX
