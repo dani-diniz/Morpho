@@ -24,34 +24,43 @@ public class Controller_ : MonoBehaviour
     public float donwLimit = -199f;
 
     /*Wind*/
+    
     // Camila: constants help making the functions simpler and smaller, further explanations on the functions themselves
+
     public float randomWind = 15f;
     public float windTime = 5f;
     private float windTimeInitial = 5f;
     private int randomFactor = 0;
+    
     /*Wind*/
+   
+    /*Item Collection UI*/
 
     public Text pointsText;
     public int points = 0;
 
+    /*Item Collection UI*/
 
     public float _directionY;
 
     private bool _canDoubleJump = false;
     private CharacterController _controller;
 
-
-    // Start is called before the first frame update
     void Start()
     {
         _controller = GetComponent<CharacterController>();
     }
 
-    // Update is called once per frame
     void FixedUpdate()
     {
-              
+        /*Joana's Player Movement*/
+       
+        // Joana : Horizontal Input results on sides (right and left) interaction
+
         float horizontalInput = Input.GetAxis("Horizontal");
+
+        // Joana : Vertical Input results on fowards and backwards interaction
+
         float verticalInput = Input.GetAxis("Vertical");
 
         Vector3 direction = new Vector3(horizontalInput, 0, verticalInput);
@@ -62,6 +71,8 @@ public class Controller_ : MonoBehaviour
         direction.y = _directionY;
 
         _controller.Move(direction * _moveSpeed * Time.deltaTime);
+        
+        /*Daniela's Game Over Condition/Instance*/
 
         if (transform.position.y <= donwLimit)
         {
@@ -69,10 +80,11 @@ public class Controller_ : MonoBehaviour
             gameOver.SetActive(true);
         }
 
-
-
+        /*Daniela's Game Over Condition/Instance*/
 
         _controller.Move(direction * _moveSpeed * Time.deltaTime);
+
+        /*Joana's Player Movement*/
 
         /*WIND*/
 
@@ -108,7 +120,7 @@ public class Controller_ : MonoBehaviour
             }
         }
 
-        // Camila: When on ice and mud, wind must not affect the player, so, interactions don't compete with each other
+        // Camila: When on "ice" and "mud", wind must not affect the player, so, interactions don't compete with each other
 
         else
         {
@@ -120,19 +132,27 @@ public class Controller_ : MonoBehaviour
 
         /*WIND*/
 
-        //Update the UI
+        /*Catarina and Diana's Item Capturing UI*/
+
+        // Catarina and Diana : Update the UI as items get captured
+
         pointsText.text = "Points: " + points;
 
-        //Gets all the items
+        // Catarina and Diana : Consequene of getting all the items
+
         if (points >= 12)
         {
             Time.timeScale = 0;
             winScreen.SetActive(true);
         }
     }
+   
+    /*Joana's Jumps*/
 
     private void Update()
-    {
+    {   
+        // Joana : Regular Jump
+
         if (_controller.isGrounded)
         {
             _canDoubleJump = true;
@@ -145,11 +165,17 @@ public class Controller_ : MonoBehaviour
         }
         else
         {
+            // Jo : Changes in order to make double jumping possible
+            // Jo : Double jump is determined by a multipler, predetermined
+
             if (Input.GetButtonDown("Jump") && _canDoubleJump)
             {
                 _directionY = _jumpSpeed * _doubleJumpMultiplier;
                 _canDoubleJump = false;
             }
         }
+       
+       /*Joana's Jumps*/
+
     }
 }

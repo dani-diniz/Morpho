@@ -7,6 +7,9 @@ public class ObjectsToCollect : MonoBehaviour
     private GameObject player;
     private Controller_ controller;
 
+    // Diana : We figured out an easier way to collect the object as we didn't desire to the Level Change any longer
+    // Di : This way is also more simple
+
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player");
@@ -14,13 +17,15 @@ public class ObjectsToCollect : MonoBehaviour
 
     }
 
+    // Di : As soon as the player collects the intended objects, they are supposed to destroy themselves and result on points
+
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("Player")) 
         {
-            //Increase the int value of points
+            // Di : Increases the int value of points
             controller.points++;
-            //Destroy the game object
+            // Di : Destroys the game object
             Destroy(gameObject);
         }
     }

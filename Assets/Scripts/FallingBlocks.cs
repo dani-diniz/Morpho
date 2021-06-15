@@ -16,7 +16,7 @@ public class FallingBlocks : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            //if player touch it, gravity start working
+            //Joana : if player touch it, gravity start working
             rb.isKinematic = false;
         }
     }
